@@ -163,10 +163,6 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/scss/style.scss"),
         },
-        googleAnalytics: {
-          trackingID: "UA-220973515-1",
-          anonymizeIP: false,
-        },
       },
     ],
   ],
@@ -181,4 +177,10 @@ module.exports = {
     ],
     "docusaurus-plugin-sass",
   ],
+  themeConfig: {
+    googleAnalytics: {
+      trackingID: "UA-220973515-1",
+      anonymizeIP: false,
+    },
+  },
 };
