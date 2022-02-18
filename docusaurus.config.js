@@ -163,8 +163,8 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/scss/style.scss"),
         },
-        gtag: {
-          trackingID: 'G-MNKKCEP3KM',
+        googleAnalytics: {
+          trackingID: "UA-220973515-1",
           anonymizeIP: false,
         },
       },
