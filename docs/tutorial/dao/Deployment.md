@@ -7,13 +7,13 @@ title: Deployment
 
 ## Requirements
 
-- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3)** version [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3).
+- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0)** version [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0).
 - ⚙️ All the environment variables must be set in the _.env_ file as indicated in the previous section.
 
 - 💲 You have ETH in your DAO Owner account (2 ETH should be more than enough).
 
 :::warning
-Make sure you are on the branch [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
+Make sure you are on the branch [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
 :::
 
 ## Deploying your DAO
@@ -46,7 +46,7 @@ BankFactory: 0x...
 ...
 ************************************************
 
-Deployed contracts: ~/Development/tribute-contracts/build/contracts-rinkeby-YYYY-MM-DDThh:mm:ss.ZZZ.json
+Deployed contracts: ~/Development/tribute-contracts/build/deployed/contracts-rinkeby-YYYY-MM-DDThh:mm:ss.ZZZ.json
 
 Deployment completed at: YYYY-MM-DDThh:mm:ss.ZZZ
 

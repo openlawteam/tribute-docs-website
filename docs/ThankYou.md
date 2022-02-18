@@ -35,13 +35,17 @@ Because of that, we want to say **THANK YOU** to **all** coders, designers, audi
 
 - [ConsenSys Diligence](https://consensys.net/diligence/)
 
-**Thank you** to all maintainers and supporters of the amazing Open Source tooling and development libraries for the Web3:
+**Thank you** to all maintainers and supporters of the amazing Open Source tooling and development libraries, APIs and platforms for the Web3 builders:
 
+- [SnapshotLabs](https://snapshot.org/#/)
 - [EthereumJS](https://github.com/ethereumjs)
 - [ChainSafe](https://github.com/ChainSafe)
 - [MetaMask](https://github.com/MetaMask)
 - [Nomic Labs](https://github.com/nomiclabs)
 - [OpenZeppelin](https://github.com/OpenZeppelin)
 - [Truffle Suite](https://github.com/trufflesuite)
+- [Hardhat](https://hardhat.org/)
+- [Infura](https://infura.io/)
+- [Alchemy](https://www.alchemy.com/)
 
 _p.s.: feel free to submit a PR with your name added to the list, if we missed any_.

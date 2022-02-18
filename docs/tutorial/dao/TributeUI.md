@@ -12,7 +12,7 @@ title: Tribute UI
 - **[MetaMask](https://metamask.io/download.html)** download and install MetaMask from https://metamask.io/download.html into your browser to access the DAO dApp.
 
 :::warning
-Make sure you are on the branch [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
+Make sure you are on the branch [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
 :::
 
 ## Configuring the dApp
@@ -30,14 +30,14 @@ First, set the `tribute-ui` env vars in the `tribute-contracts/.env` file, just 
 REACT_APP_DEFAULT_CHAIN_NAME_LOCAL=RINKEBY
 
 # It can be the same value you used for the Tribute DAO deployment.
-REACT_APP_INFURA_PROJECT_ID_DEV=INFURA_API_KEY
+REACT_APP_INFURA_PROJECT_ID_DEV=set-your-infura-api-key-here
 
 # The address of the Multicall smart contract deployed to the Rinkeby network.
-# Copy that from the tribute-contracts/build/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json
+# Copy that from the tribute-contracts/build/deployed/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json
 REACT_APP_MULTICALL_CONTRACT_ADDRESS=0x...
 
 # The address of the DaoRegistry smart contract deployed to the Rinkeby network.
-# Copy that from the tribute-contracts/build/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json
+# Copy that from the tribute-contracts/build/deployed/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json
 REACT_APP_DAO_REGISTRY_CONTRACT_ADDRESS=0x...
 
 # Enable Rinkeby network for Tribute UI
@@ -46,7 +46,7 @@ REACT_APP_ENVIRONMENT=development
 
 Open the file which contains the addresses of all deployed contracts:
 
-- `tribute-contracts/build/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json`
+- `tribute-contracts/build/deployed/contracts-rinkeby-YYYY-MM-DD-HH:mm:ss.json`
 
 Copy the address of `DaoRegistry` contract and set it to `REACT_APP_DAO_REGISTRY_CONTRACT_ADDRESS` env var.
 

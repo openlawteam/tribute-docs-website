@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ## Requirements
 
-- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3)** version [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3).
+- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0)** version [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0).
 - **[Node.js](https://nodejs.org/en/download/)** version >= 16.0.0 or above (which can be checked by running `node -v`). You can use [nvm](https://github.com/nvm-sh/nvm) for managing multiple Node versions on a single machine.
 - **[Git](https://git-scm.com/downloads)** version 2.15.0 or above.
 - **[Solc](https://docs.soliditylang.org/en/develop/installing-solidity.html)** version 0.8.0.
 
 :::warning
-Make sure you are on the branch [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
+Make sure you are on the branch [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
 :::
 
 ## Creating the project
@@ -31,20 +31,20 @@ git clone https://github.com/openlawteam/tribute-contracts.git
 cd tribute-contracts
 ```
 
-Fetch and checkout the branch `release-v2.3.3`:
+Fetch and checkout the branch `release-v2.4.0`:
 
 ```bash
-git fetch origin release-v2.3.3
+git fetch origin release-v2.4.0
 ```
 
 ```bash
-git checkout release-v2.3.3
+git checkout release-v2.4.0
 ```
 
 Install the project dependencies and compile the smart contracts:
 
 ```bash
-npm ci && npm run compile
+npm run build
 ```
 
 ⚡️ That's is great! You have installed project dependencies, compiled all the smart contracts, and is prepared to configure the testnet deployment. Let's move to the next section!

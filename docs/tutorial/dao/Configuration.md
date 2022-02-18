@@ -7,11 +7,11 @@ title: Configuration
 
 ## Requirements
 
-- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3)** version [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3).
+- **[Tribute Contracts](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0)** version [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0).
 - **[Infura Ethereum API KEY](https://infura.io/product/ethereum)**: sign up for free, verify your email, create an ethereum project to get your API Key (also known as `Project Id`). We will use that to deploy the contracts to the Rinkeby network. Checkout this **[Infura Blog Post](https://blog.infura.io/getting-started-with-infura-28e41844cc89/)** for more info on that.
 
 :::warning
-Make sure you are on the branch [release-v2.3.3](https://github.com/openlawteam/tribute-contracts/tree/release-v2.3.3) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
+Make sure you are on the branch [release-v2.4.0](https://github.com/openlawteam/tribute-contracts/tree/release-v2.4.0) which is the version that contains the contracts integrated with [TributeUI](https://github.com/openlawteam/tribute-ui).
 :::
 
 ## Configuring the project
@@ -35,7 +35,7 @@ _[Here is a sample .env file](https://github.com/openlawteam/tribute-contracts/b
 Please use the following template, and fill out each environment variable with the proper values as indicated in the comments below:
 
 :::caution
-The **DAO_OWNER_ADDR** env var needs to match the first ethereum address derived from your **TRUFFLE_MNEMONIC**. With a seed phrase you can create multiple addresses, but in this case we need the address of the first account of the wallet to be used as DAO owner.
+The **DAO_OWNER_ADDR** env var needs to match the first ethereum address derived from your **WALLET_MNEMONIC**. With a seed phrase you can create multiple addresses, but in this case we need the address of the first account of the wallet to be used as DAO owner.
 :::
 
 ```bash
@@ -53,14 +53,6 @@ DAO_NAME=My Tribute DAO xyz...
 # otherwise it won't work.
 DAO_OWNER_ADDR=0x...
 
-# The contract which contains the previously deployed adapters and extensions,
-# so you don't have to deploy it again.
-# You don't need to change this address if you are deploying to Rinkeby.
-# For any other network, you can disable this environment variable.
-# Rinkeby: 0xFc1EFB0e026396BdCf3Fa6bfB34Ff9f07158b7dA - contracts v2.3.3
-DAO_ARTIFACTS_CONTRACT_ADDR=0xFc1EFB0e026396BdCf3Fa6bfB34Ff9f07158b7dA
-DAO_ARTIFACTS_OWNER_ADDR=0xEd7B3f2902f2E1B17B027bD0c125B674d293bDA0
-
 # The name of the ERC20 token of your DAO.
 ERC20_TOKEN_NAME=My First DAO Token
 
@@ -76,19 +68,14 @@ ERC20_TOKEN_DECIMALS=0
 # The Ethereum Node URL to connect the Ethereum network. You can follow
 # these steps to get your ProjectId/API Key from Infura:
 # https://blog.infura.io/getting-started-with-infura-28e41844cc89/
-# Or can use the default one from OpenLaw team, or set your own Infura/Alchemy API keys
-ETH_NODE_URL=ws://rinkeby.openlaw.io:8546
-#ETH_NODE_URL=wss://eth-rinkeby.ws.alchemyapi.io/v2/your-api-key
-#ETH_NODE_URL=wss://rinkeby.infura.io/ws/v3/your-api-key
+# Set your own Infura API or Alchemy API key
+ETH_NODE_URL=https://rinkeby.infura.io/v3/your-infura-api-key
+#ETH_NODE_URL=https://eth-rinkeby.alchemyapi.io/v2/your-alchemy-api-key
 
 # The 12 word "secret recovery phrase" for the ethereum address
 # referenced in DAO_OWNER_ADDR above. This can be found in your wallet.
 # It will be used to create the HD wallet and sign transactions on your behalf.
-TRUFFLE_MNEMONIC=...
-
-# You can set that to use the same address you have in the DAO_OWNER_ADDR
-COUPON_CREATOR_ADDR=0x...
-KYC_COUPON_CREATOR_ADDR=0x...
+WALLET_MNEMONIC=...
 ```
 
 ⚡️ Alright! You have configured the project to deploy the contracts to **[Rinkeby](https://rinkeby.etherscan.io/)** test network. Let's move the next section to finally publish your DAO to the world 🌎!
