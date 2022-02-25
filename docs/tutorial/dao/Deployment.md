@@ -21,7 +21,7 @@ Make sure you are on the branch [release-v2.4.0](https://github.com/openlawteam/
 Execute the following command from the root of `tribute-contracts` folder to deploy all the contracts to Rinkeby:
 
 ```bash
-npm run deploy:rinkeby
+npm run deploy rinkeby
 ```
 
 🍺 Sit back and have some drink while the deployment script is executed. It may take from 10 to 20 minutes to create all the smart contracts.
