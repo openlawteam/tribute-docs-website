@@ -78,6 +78,14 @@ ETH_NODE_URL=https://rinkeby.infura.io/v3/your-infura-api-key
 WALLET_MNEMONIC=...
 ```
 
+### Build
+
+With the `.env` file created, and all the environment variables set, you can install the project dependencies and compile the smart contracts:
+
+```bash
+npm run build
+```
+
 ⚡️ Alright! You have configured the project to deploy the contracts to **[Rinkeby](https://rinkeby.etherscan.io/)** test network. Let's move the next section to finally publish your DAO to the world 🌎!
 
 ## Problems?

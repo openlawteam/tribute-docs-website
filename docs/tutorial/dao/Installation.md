@@ -41,13 +41,7 @@ git fetch origin release-v2.4.0
 git checkout release-v2.4.0
 ```
 
-Install the project dependencies and compile the smart contracts:
-
-```bash
-npm run build
-```
-
-⚡️ That's is great! You have installed project dependencies, compiled all the smart contracts, and is prepared to configure the testnet deployment. Let's move to the next section!
+Let's move to the next section to build and compile the DAO contracts.
 
 ## Problems?
 
