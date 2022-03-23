@@ -2,7 +2,7 @@ name: documentation
 
 on:
   push:
-    branches: [master]
+    branches: master
 
 env:
   ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
